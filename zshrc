@@ -16,7 +16,8 @@ alias n='/opt/homebrew/bin/nvim'
 alias st='git status'
 alias cp='cp -vi'
 alias rm='rm -i'
-alias mv='mv -i' 
+alias mv='mv -i'
+alias log='git log --oneline'
 
 export MANPAGER='nvim +Man!'
 
