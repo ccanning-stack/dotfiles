@@ -14,6 +14,9 @@ export COLORTERM="truecolor"
 
 alias n='/opt/homebrew/bin/nvim'
 alias st='git status'
+alias cp='cp -vi'
+alias rm='rm -i'
+alias mv='mv -i' 
 
 export MANPAGER='nvim +Man!'
 
