@@ -18,6 +18,8 @@ alias cp='cp -vi'
 alias rm='rm -i'
 alias mv='mv -i'
 alias log='git log --oneline'
+alias gaa='git add .'
+alias gcmsg='git commit -m'
 
 export MANPAGER='nvim +Man!'
 
