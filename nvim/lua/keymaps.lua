@@ -1,6 +1,7 @@
 local diag_float_open = false
 local diag_float_win = nil
 
+vim.keymap.set("n", "<leader>p", ":NvimTreeToggle<CR>", { desc = "Toggle file tree" })
 vim.keymap.set('i', 'jj', '<Esc>', { desc = 'Exit insert mode' })
 
 vim.keymap.set("n", "<leader>e", function()
