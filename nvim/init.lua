@@ -1,10 +1,8 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
-
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-
 require("keymaps")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -19,7 +17,6 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
-
 require("lazy").setup("plugins")
 
 vim.api.nvim_create_autocmd("BufWritePre", {
