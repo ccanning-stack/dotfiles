@@ -18,6 +18,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
+vim.o.guifont = "JetBrains Mono:h18"
 
 vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = "*.c",
