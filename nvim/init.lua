@@ -26,3 +26,5 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     vim.cmd([[silent! %!clang-format]])
   end,
 })
+
+require("clipboard")
