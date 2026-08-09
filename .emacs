@@ -12,6 +12,12 @@
 (ido-everywhere 1)
 (global-display-line-numbers-mode)
 
+(defun kill-all-buffers ()
+  (interactive)
+  (mapc #'kill-buffer (buffer-list)))
+(global-set-key (kbd "C-c k") #'kill-all-buffers)
 (define-key key-translation-map (kbd "M-$") "#")
+(global-set-key (kbd "C-c d") #'duplicate-line)
+(electric-pair-mode 1)
 
 (load-file custom-file)
